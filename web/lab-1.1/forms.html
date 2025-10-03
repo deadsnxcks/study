@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">Самые прослушиваемые песни в Spotify</a>
+        <br>
+        <a href="forms.html">Список самых прослушиваемых песен в Spotify</a>
+        <hr>
+    </header>
+    <main>
+        <details>
+            <summary><strong>График</strong></summary>
+            <form>
+
+                <h4>Значение по оси OX</h4>
+                <input type="radio" id="genre" name="oxAxis">
+                <label for="genre">Жанр</label><br>
+                <input type="radio" id="country" name="oxAxis">
+                <label for="country">Страна</label><br>
+                <input type="radio" id="date" name="oxAxis">
+                <label for="date">Год</label><br>
+
+                <h4>Результат</h4>
+                <input type="checkbox" id="max">
+                <label for="max">Максимальное кол-во прослушиваний</label>
+                <br>
+                <input type="checkbox" id="min">
+                <label for="min">Минимальное кол-во прослушиваний</label>
+                <br>
+                <input type="checkbox" id="count">
+                <label for="count">Количество треков</label>
+                <br>
+    
+                <input type="button" value="Построить">
+            </form><br>
+        </details>
+
+        <details>
+            <summary><strong>Фильтр</strong></summary>
+            <form>
+                <p>
+                    <label for="title-f2">Название:</label>
+                    <input type="text" id="title-f2">
+                </p>
+
+                <p>
+                    <label for="author-f2">Автор:</label>
+                    <input type="text" id="author-f2">
+                </p>
+
+                <p>
+                    <label for="genre-f2">Жанр:</label>
+                    <input type="text" id="genre-f2">
+                </p>
+
+                <p>
+                    <label for="country-f2">Страна:</label>
+                    <input type="text" id="country-f2">
+                </p>
+
+                <p>
+                    <label for="streams-f2.1">Кол-во стримов: от <input type="number" id="streams-f2.1"></label>
+                    <label for="streams-f2.2"> до <input type="number" id="streams-f2.2"></label>
+                </p>
+
+                <p>
+                    <label for="date-f2.1">Год релиза: от <input type="number" id="date-f2.1"></label>
+                    <label for="date-f2.2"> до <input type="number" id="date-f2.2"></label>
+                </p>
+                <input type="button" value="Найти">
+            </form><br>
+        </details>
+
+        <details>
+            <summary><strong>Сортировка</strong></summary>
+            <p>
+                Первый уровень: 
+                <select>
+                    <option value="no">Нет</option>
+                    <option value="name">Название</option>
+                    <option value="author">Автор</option>
+                    <option value="genre">Жанр</option>
+                    <option value="country">Страна</option>
+                    <option value="streams">Кол-во стримов</option>
+                    <option value="date">Дата релиза</option>
+                </select>
+                <label for="check-1">по убыванию?</label>
+                <input type="checkbox" id="check-1">
+            </p>
+            <p>
+                Второй уровень: 
+                <select>
+                    <option value="no">Нет</option>
+                    <option value="name">Название</option>
+                    <option value="author">Автор</option>
+                    <option value="genre">Жанр</option>
+                    <option value="country">Страна</option>
+                    <option value="streams">Кол-во стримов</option>
+                    <option value="date">Дата релиза</option>
+                </select>
+                <label for="check-2">по убыванию?</label>
+                <input type="checkbox" id="check-2">
+            </p>
+            <p>
+                Третий уровень: 
+                <select>
+                    <option value="no">Нет</option>
+                    <option value="name">Название</option>
+                    <option value="author">Автор</option>
+                    <option value="genre">Жанр</option>
+                    <option value="country">Страна</option>
+                    <option value="streams">Кол-во стримов</option>
+                    <option value="date">Дата релиза</option>
+                </select>
+                <label for="check-3">по убыванию?</label>
+                <input type="checkbox" id="check-3">
+            </p>
+        </details><br>
+
+        <table border="1" cellpadding="5" cellspacing="0">
+            <tr align="center">
+                <th>Название</th>
+                <th>Автор</th>
+                <th>Жанр</th>
+                <th>Страна</th>
+                <th>Кол-во стримов (млрд)</th>
+                <th>Год релиза</th>
+            </tr>
+            <tr align="center"><td>Blinding Lights</td><td>The Weeknd</td><td>Synth-pop</td><td>Канада</td><td>5.049</td><td>2019</td></tr>
+            <tr align="center"><td>Shape of You</td><td>Ed Sheeran</td><td>Pop</td><td>Великобритания</td><td>4.571</td><td>2017</td></tr>
+            <tr align="center"><td>Starboy</td><td>The Weeknd and Daft Punk</td><td>R&B</td><td>Канада</td><td>4.116</td><td>2016</td></tr>
+            <tr align="center"><td>Someone You Loved</td><td>Lewis Capaldi</td><td>Pop</td><td>Великобритания</td><td>4.069</td><td>2018</td></tr>
+            <tr align="center"><td>Sweater Weather</td><td>The Neighbourhood</td><td>Indie Rock</td><td>США</td><td>4.054</td><td>2012</td></tr>
+            <tr align="center"><td>As It Was</td><td>Harry Styles</td><td>Pop</td><td>Великобритания</td><td>4.053</td><td>2022</td></tr>
+            <tr align="center"><td>Sunflower</td><td>Post Malone and Swae Lee</td><td>Hip-Hop</td><td>США</td><td>3.970</td><td>2018</td></tr>
+            <tr align="center"><td>One Dance</td><td>Drake with Wizkid and Kyla</td><td>Dancehall</td><td>Канада</td><td>3.806</td><td>2016</td></tr>
+            <tr align="center"><td>Stay</td><td>The Kid Laroi and Justin Bieber</td><td>Pop</td><td>Австралия</td><td>3.677</td><td>2021</td></tr>
+            <tr align="center"><td>Perfect</td><td>Ed Sheeran</td><td>Folk-pop</td><td>Великобритания</td><td>3.638</td><td>2017</td></tr>
+            <tr align="center"><td>Believer</td><td>Imagine Dragons</td><td>Rock</td><td>США</td><td>3.594</td><td>2017</td></tr>
+            <tr align="center"><td>Heat Waves</td><td>Glass Animals</td><td>Indie Pop</td><td>Великобритания</td><td>3.536</td><td>2020</td></tr>
+            <tr align="center"><td>Lovely</td><td>Billie Eilish and Khalid</td><td>Pop</td><td>США</td><td>3.476</td><td>2018</td></tr>
+            <tr align="center"><td>Closer</td><td>The Chainsmokers and Halsey</td><td>EDM</td><td>США</td><td>3.428</td><td>2016</td></tr>
+            <tr align="center"><td>Say You Won't Let Go</td><td>James Arthur</td><td>Pop</td><td>Великобритания</td><td>3.408</td><td>2016</td></tr>
+            <tr align="center"><td>Something Just Like This</td><td>The Chainsmokers and Coldplay</td><td>EDM</td><td>США / Великобритания</td><td>3.351</td><td>2017</td></tr>
+            <tr align="center"><td>Dance Monkey</td><td>Tones and I</td><td>Pop</td><td>Австралия</td><td>3.329</td><td>2019</td></tr>
+            <tr align="center"><td>I Wanna Be Yours</td><td>Arctic Monkeys</td><td>Indie Rock</td><td>Великобритания</td><td>3.323</td><td>2013</td></tr>
+            <tr align="center"><td>Yellow</td><td>Coldplay</td><td>Rock</td><td>Великобритания</td><td>3.312</td><td>2000</td></tr>
+            <tr align="center"><td>The Night We Met</td><td>Lord Huron</td><td>Folk</td><td>США</td><td>3.309</td><td>2015</td></tr>
+            <tr align="center"><td>Riptide</td><td>Vance Joy</td><td>Indie Folk</td><td>Австралия</td><td>3.302</td><td>2013</td></tr>
+            <tr align="center"><td>Rockstar</td><td>Post Malone and 21 Savage</td><td>Hip-Hop</td><td>США</td><td>3.252</td><td>2017</td></tr>
+            <tr align="center"><td>Another Love</td><td>Tom Odell</td><td>Pop</td><td>Великобритания</td><td>3.232</td><td>2012</td></tr>
+            <tr align="center"><td>Take Me to Church</td><td>Hozier</td><td>Blues Rock</td><td>Ирландия</td><td>3.196</td><td>2013</td></tr>
+            <tr align="center"><td>Counting Stars</td><td>OneRepublic</td><td>Pop Rock</td><td>США</td><td>3.155</td><td>2013</td></tr>
+            <tr align="center"><td>Señorita</td><td>Shawn Mendes and Camila Cabello</td><td>Pop</td><td>Канада / Куба</td><td>3.126</td><td>2019</td></tr>
+            <tr align="center"><td>Photograph</td><td>Ed Sheeran</td><td>Folk-pop</td><td>Великобритания</td><td>3.113</td><td>2014</td></tr>
+            <tr align="center"><td>Watermelon Sugar</td><td>Harry Styles</td><td>Pop</td><td>Великобритания</td><td>3.109</td><td>2019</td></tr>
+            <tr align="center"><td>Cruel Summer</td><td>Taylor Swift</td><td>Synth-pop</td><td>США</td><td>3.090</td><td>2019</td></tr>
+            <tr align="center"><td>Birds of a Feather</td><td>Billie Eilish</td><td>Pop</td><td>США</td><td>3.065</td><td>2024</td></tr>
+            <tr align="center"><td>Can't Hold Us</td><td>Macklemore & Ryan Lewis and Ray Dalton</td><td>Hip-Hop</td><td>США</td><td>3.053</td><td>2011</td></tr>
+            <tr align="center"><td>Don't Start Now</td><td>Dua Lipa</td><td>Disco</td><td>Великобритания</td><td>3.044</td><td>2019</td></tr>
+            <tr align="center"><td>Die with a Smile</td><td>Lady Gaga and Bruno Mars</td><td>Pop</td><td>США</td><td>3.003</td><td>2024</td></tr>
+            <tr align="center"><td>Viva La Vida</td><td>Coldplay</td><td>Rock</td><td>Великобритания</td><td>2.982</td><td>2008</td></tr>
+            <tr align="center"><td>Lucid Dreams</td><td>Juice Wrld</td><td>Emo Rap</td><td>США</td><td>2.975</td><td>2018</td></tr>
+            <tr align="center"><td>Die for You</td><td>The Weeknd</td><td>R&B</td><td>Канада</td><td>2.964</td><td>2016</td></tr>
+            <tr align="center"><td>Circles</td><td>Post Malone</td><td>Pop Rock</td><td>США</td><td>2.954</td><td>2019</td></tr>
+            <tr align="center"><td>Goosebumps</td><td>Travis Scott and Kendrick Lamar</td><td>Trap</td><td>США</td><td>2.951</td><td>2016</td></tr>
+            <tr align="center"><td>Just the Way You Are</td><td>Bruno Mars</td><td>Pop</td><td>США</td><td>2.925</td><td>2010</td></tr>
+            <tr align="center"><td>Bohemian Rhapsody</td><td>Queen</td><td>Rock</td><td>Великобритания</td><td>2.922</td><td>1975</td></tr>
+            <tr align="center"><td>Every Breath You Take</td><td>The Police</td><td>New Wave</td><td>Великобритания</td><td>2.920</td><td>1983</td></tr>
+            <tr align="center"><td>Love Yourself</td><td>Justin Bieber</td><td>Pop</td><td>Канада</td><td>2.909</td><td>2015</td></tr>
+            <tr align="center"><td>Thinking Out Loud</td><td>Ed Sheeran</td><td>Folk-pop</td><td>Великобритания</td><td>2.899</td><td>2014</td></tr>
+            <tr align="center"><td>Shallow</td><td>Lady Gaga and Bradley Cooper</td><td>Pop</td><td>США</td><td>2.894</td><td>2018</td></tr>
+            <tr align="center"><td>God's Plan</td><td>Drake</td><td>Hip-Hop</td><td>Канада</td><td>2.877</td><td>2018</td></tr>
+            <tr align="center"><td>Wake Me Up</td><td>Avicii</td><td>EDM</td><td>Швеция</td><td>2.866</td><td>2013</td></tr>
+            <tr align="center"><td>All of Me</td><td>John Legend</td><td>R&B</td><td>США</td><td>2.859</td><td>2013</td></tr>
+            <tr align="center"><td>Thunder</td><td>Imagine Dragons</td><td>Pop Rock</td><td>США</td><td>2.836</td><td>2017</td></tr>
+            <tr align="center"><td>Locked out of Heaven</td><td>Bruno Mars</td><td>Funk</td><td>США</td><td>2.819</td><td>2012</td></tr>
+            <tr align="center"><td>Demons</td><td>Imagine Dragons</td><td>Rock</td><td>США</td><td>2.811</td><td>2012</td></tr>
+        </table>
+    </main>
+    <footer>
+        <hr>    
+        <p>Б9123-09.03.04 Ковалёв И.А.</p>
+    </footer>
+</body>
+</html> 
